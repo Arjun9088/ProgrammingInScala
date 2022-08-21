@@ -1,0 +1,700 @@
+2022.08.20 20:53:42 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/arjun/Desktop/arjunLearnsScala/.metals/lsp.trace.json or /home/arjun/.cache/metals/lsp.trace.json[0m
+2022.08.20 20:53:44 INFO  logging to file /home/arjun/Desktop/arjunLearnsScala/.metals/metals.log[0m
+2022.08.20 20:53:44 INFO  Started: Metals version 0.11.8 in workspace '/home/arjun/Desktop/arjunLearnsScala' for client Visual Studio Code 1.70.1.[0m
+2022.08.20 20:53:45 WARN  Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.[0m
+2022.08.20 20:53:47 INFO  time: initialize in 2.71s[0m
+2022.08.20 20:53:50 WARN  Build server is not auto-connectable.[0m
+2022.08.20 20:53:50 WARN  no build tool detected in workspace '/home/arjun/Desktop/arjunLearnsScala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2022.08.20 20:53:50 WARN  no build target for: /home/arjun/Desktop/arjunLearnsScala/myScript.sc[0m
+2022.08.20 20:53:58 INFO  no build target found for /home/arjun/Desktop/arjunLearnsScala/myScript.sc. Using presentation compiler with project's scala-library version: 3.1.3[0m
+Aug 20, 2022 8:53:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+Aug 20, 2022 8:53:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+2022.08.20 20:53:59 WARN  no build target for: /home/arjun/Desktop/arjunLearnsScala/myScript.sc[0m
+2022.08.20 20:54:00 INFO  time: code lens generation in 1.73s[0m
+2022.08.20 20:54:00 INFO  time: code lens generation in 1.65s[0m
+2022.08.20 21:09:18 INFO  no build target found for /home/arjun/Desktop/arjunLearnsScala/*.worksheet.sc. Using presentation compiler with project's scala-library version: 3.1.3[0m
+2022.08.20 21:09:18 INFO  time: evaluated worksheet '*.worksheet.sc' in 11s[0m
+[31merror[39m: *.worksheet.sc:1:13: : expected but ) found
+def hello(ti)
+            ^
+2022.08.20 21:09:19 INFO  time: evaluated worksheet '*.worksheet.sc' in 1.18s[0m
+Aug 20, 2022 9:11:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 418
+[31merror[39m: *.worksheet.sc:9:1: 
+missing argument for parameter lastname of method hello in class App: (title: String, firstName: String, lastname: Option[String]): Unit
+hello(title = "Mr", firstName = "Arjun")
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.08.20 21:12:16 INFO  time: evaluated worksheet '*.worksheet.sc' in 1.17s[0m
+2022.08.20 21:12:32 INFO  time: evaluated worksheet '*.worksheet.sc' in 1.58s[0m
+[31merror[39m: *.worksheet.sc:9:42: 
+Found:    ("Sabu" : String)
+Required: Option[String]
+hello(title = "Mr", firstName = "Arjun", "Sabu")
+                                         ^^^^^^
+2022.08.20 21:12:37 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.42s[0m
+2022.08.20 21:12:51 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.82s[0m
+2022.08.20 21:27:18 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.87s[0m
+2022.08.20 21:29:01 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.81s[0m
+2022.08.20 21:29:11 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.69s[0m
+2022.08.20 21:30:47 INFO  time: evaluated worksheet '*.worksheet.sc' in 1.03s[0m
+[31merror[39m: *.worksheet.sc:2:5: 
+Not found: total
+    total += (if i%2 == 0 then i else 20)
+    ^^^^^
+2022.08.20 21:32:50 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.26s[0m
+2022.08.20 21:33:03 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.67s[0m
+[31merror[39m: *.worksheet.sc:4:1: 
+Not found: printl
+printl(total)
+^^^^^^
+2022.08.20 21:33:11 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.28s[0m
+2022.08.20 21:33:15 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.64s[0m
+2022.08.20 21:35:05 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.57s[0m
+2022.08.20 21:35:15 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.53s[0m
+2022.08.20 21:39:07 INFO  time: code lens generation in 1.07s[0m
+[31merror[39m: *.worksheet.sc:8:133: 
+expression expected but unindent found
+            if i % 3 == 0 && i % 5 == 0 then "FizzBuzz" else if i % 3 == 0 then "Fizz" else if i % 5 == 0 then "Buzz" else println i
+                                                                                                                                    ^
+[31merror[39m: *.worksheet.sc:8:124: 
+value i is not a member of Unit
+            if i % 3 == 0 && i % 5 == 0 then "FizzBuzz" else if i % 3 == 0 then "Fizz" else if i % 5 == 0 then "Buzz" else println i
+                                                                                                                           ^^^^^^^^^
+2022.08.20 21:39:27 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.38s[0m
+[31merror[39m: *.worksheet.sc:8:125: 
+Found:    (i : Int)
+Required: String
+            if i % 3 == 0 && i % 5 == 0 then "FizzBuzz" else if i % 3 == 0 then "Fizz" else if i % 5 == 0 then "Buzz" else  i
+                                                                                                                            ^
+2022.08.20 21:39:33 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.25s[0m
+2022.08.20 21:39:42 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.46s[0m
+2022.08.20 21:39:50 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.56s[0m
+[31merror[39m: *.worksheet.sc:10:17: 
+Wrong number of parameters, expected: 1
+fizzBuzzSeq.map(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz")).foreach(println)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:10:17: 
+Wrong number of parameters, expected: 1
+fizzBuzzSeq.map(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz")).foreach(println)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:10:17: 
+Wrong number of parameters, expected: 1
+fizzBuzzSeq.map(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz")).foreach(println)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:10:17: 
+Found:    (<error Wrong number of parameters, expected: 1>, 
+  <error Wrong number of parameters, expected: 1>
+, <error Wrong number of parameters, expected: 1>) => Nothing
+Required: String => Nothing
+fizzBuzzSeq.map(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz")).foreach(println)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.08.20 21:41:12 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.3s[0m
+[31merror[39m: *.worksheet.sc:10:17: 
+Not found: e
+fizzBuzzSeq.map(e =>!e.equalsIgnoreCase("Fizz") || !e.equalsIgnoreCase("Buzz") || !e.equalsIgnoreCase("FizzBuzz")).foreach(println)
+                ^
+2022.08.20 21:41:31 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.28s[0m
+2022.08.20 21:41:52 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.6s[0m
+2022.08.20 21:42:07 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.54s[0m
+[31merror[39m: *.worksheet.sc:10:19: 
+Wrong number of parameters, expected: 1
+fizzBuzzSeq.count(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz"))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:10:19: 
+Wrong number of parameters, expected: 1
+fizzBuzzSeq.count(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz"))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:10:19: 
+Wrong number of parameters, expected: 1
+fizzBuzzSeq.count(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz"))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:10:19: 
+Found:    (<error Wrong number of parameters, expected: 1>, 
+  <error Wrong number of parameters, expected: 1>
+, <error Wrong number of parameters, expected: 1>) => Boolean
+Required: String => Boolean
+fizzBuzzSeq.count(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz"))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.08.20 21:42:48 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.28s[0m
+2022.08.20 21:42:57 INFO  file:///home/arjun/Desktop/arjunLearnsScala/*.worksheet.sc:10:19: stale mdoc error:
+Wrong number of parameters, expected: 1
+fizzBuzzSeq.count(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz"))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.08.20 21:42:57 INFO  file:///home/arjun/Desktop/arjunLearnsScala/*.worksheet.sc:10:19: stale mdoc error:
+Wrong number of parameters, expected: 1
+fizzBuzzSeq.count(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz"))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.08.20 21:42:57 INFO  file:///home/arjun/Desktop/arjunLearnsScala/*.worksheet.sc:10:19: stale mdoc error:
+Wrong number of parameters, expected: 1
+fizzBuzzSeq.count(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz"))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.08.20 21:42:57 INFO  file:///home/arjun/Desktop/arjunLearnsScala/*.worksheet.sc:10:19: stale mdoc error:
+Found:    (<error Wrong number of parameters, expected: 1>, 
+  <error Wrong number of parameters, expected: 1>
+, <error Wrong number of parameters, expected: 1>) => Boolean
+Required: String => Boolean
+fizzBuzzSeq.count(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz"))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.08.20 21:42:57 INFO  file:///home/arjun/Desktop/arjunLearnsScala/*.worksheet.sc:10:19: stale mdoc error:
+Wrong number of parameters, expected: 1
+fizzBuzzSeq.count(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz"))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.08.20 21:42:57 INFO  file:///home/arjun/Desktop/arjunLearnsScala/*.worksheet.sc:10:19: stale mdoc error:
+Wrong number of parameters, expected: 1
+fizzBuzzSeq.count(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz"))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.08.20 21:42:57 INFO  file:///home/arjun/Desktop/arjunLearnsScala/*.worksheet.sc:10:19: stale mdoc error:
+Wrong number of parameters, expected: 1
+fizzBuzzSeq.count(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz"))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.08.20 21:42:57 INFO  file:///home/arjun/Desktop/arjunLearnsScala/*.worksheet.sc:10:19: stale mdoc error:
+Found:    (<error Wrong number of parameters, expected: 1>, 
+  <error Wrong number of parameters, expected: 1>
+, <error Wrong number of parameters, expected: 1>) => Boolean
+Required: String => Boolean
+fizzBuzzSeq.count(!_.equalsIgnoreCase("Fizz") || !_.equalsIgnoreCase("Buzz") || !_.equalsIgnoreCase("FizzBuzz"))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31merror[39m: *.worksheet.sc:10:19: 
+Not found: e
+fizzBuzzSeq.count(e=>!e.equalsIgnoreCase("Fizz") || !e.equalsIgnoreCase("Buzz") || !e.equalsIgnoreCase("FizzBuzz"))
+                  ^
+2022.08.20 21:43:08 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.28s[0m
+[31merror[39m: *.worksheet.sc:10:19: 
+Not found: e
+fizzBuzzSeq.count(e=>!e.equalsIgnoreCase("Fizz"))
+                  ^
+2022.08.20 21:43:27 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.2s[0m
+2022.08.20 21:43:44 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.64s[0m
+[31merror[39m: *.worksheet.sc:10:20: 
+Missing parameter type
+
+I could not infer the type of the parameter _$1 of expanded function:
+(_$1, _$2) => _$1.equalsIgnoreCase("Fizz") || _$2.equalsIgnoreCase("Buzz").
+fizzBuzzSeq.count((_.equalsIgnoreCase("Fizz") || _.equalsIgnoreCase("Buzz")) || _.equalsIgnoreCase("Fizz"))
+                   ^
+[31merror[39m: *.worksheet.sc:10:50: 
+Missing parameter type
+
+I could not infer the type of the parameter _$2 of expanded function:
+(_$1, _$2) => _$1.equalsIgnoreCase("Fizz") || _$2.equalsIgnoreCase("Buzz").
+fizzBuzzSeq.count((_.equalsIgnoreCase("Fizz") || _.equalsIgnoreCase("Buzz")) || _.equalsIgnoreCase("Fizz"))
+                                                 ^
+2022.08.20 21:44:07 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.25s[0m
+2022.08.20 21:45:20 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.62s[0m
+2022.08.20 21:45:28 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.55s[0m
+2022.08.20 22:16:17 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.54s[0m
+2022.08.20 22:16:24 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.52s[0m
+2022.08.20 22:19:27 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.52s[0m
+Aug 20, 2022 10:32:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5016
+[31merror[39m: *.worksheet.sc:11:53: 
+missing argument for parameter z of constructor Point3d in class Point3d: (x: Double, y: Double, z: Double): App.this.Point3d
+val points: Array[Point] = Array(new Point2d(1, 2), new Point3d(3, 4))
+                                                    ^^^^^^^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:11:53: 
+missing argument for parameter z of constructor Point3d in class Point3d: (x: Double, y: Double, z: Double): App.this.Point3d
+val points: Array[Point] = Array(new Point2d(1, 2), new Point3d(3, 4))
+                                                    ^^^^^^^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:13:24: 
+Missing parameter type
+
+I could not infer the type of the parameter _$1 of expanded function:
+_$1 => _$1.hypotenuse.
+points.foreach(println(_.hypotenuse))
+                       ^
+[31merror[39m: *.worksheet.sc:13:16: 
+Found:    Unit
+Required: App.this.Point => Any
+points.foreach(println(_.hypotenuse))
+               ^^^^^^^^^^^^^^^^^^^^^
+2022.08.20 22:34:37 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.34s[0m
+[31merror[39m: *.worksheet.sc:13:24: 
+Missing parameter type
+
+I could not infer the type of the parameter _$1 of expanded function:
+_$1 => _$1.hypotenuse.
+points.foreach(println(_.hypotenuse))
+                       ^
+[31merror[39m: *.worksheet.sc:13:16: 
+Found:    Unit
+Required: App.this.Point => Any
+points.foreach(println(_.hypotenuse))
+               ^^^^^^^^^^^^^^^^^^^^^
+2022.08.20 22:34:46 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.35s[0m
+Aug 20, 2022 10:34:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5532
+2022.08.20 22:35:18 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.48s[0m
+2022.08.20 22:35:35 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.59s[0m
+2022.08.20 22:41:20 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.41s[0m
+2022.08.20 22:41:24 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.39s[0m
+[31merror[39m: *.worksheet.sc:3:9: ; expected but yield found
+        yield{
+        ^^^^^
+2022.08.20 22:42:07 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.29s[0m
+[31merror[39m: *.worksheet.sc:8:23: 
+Found:    Seq[String]
+Required: Array[String]
+val a:Array[String] = Seq("1")
+                      ^^^^^^^^
+2022.08.20 22:42:29 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.22s[0m
+2022.08.20 22:42:41 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.5s[0m
+[31merror[39m: *.worksheet.sc:10:8: 
+expression expected but '}' found
+    i++
+       ^
+[31merror[39m: *.worksheet.sc:10:5: 
+value ++ is not a member of Int
+    i++
+    ^^^
+2022.08.20 22:44:39 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.25s[0m
+2022.08.20 22:44:46 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.57s[0m
+2022.08.20 22:45:00 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.48s[0m
+Aug 20, 2022 10:46:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: begin 284, end 301, length 298
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: begin 284, end 301, length 298
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.StringIndexOutOfBoundsException: begin 284, end 301, length 298
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.getIndentForPos(FlatMapToForComprehensionCodeAction.scala:667)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$4(FlatMapToForComprehensionCodeAction.scala:54)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$3(FlatMapToForComprehensionCodeAction.scala:50)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$2(FlatMapToForComprehensionCodeAction.scala:49)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$1(FlatMapToForComprehensionCodeAction.scala:48)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.08.20 23:06:09 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.58s[0m
+[31merror[39m: *.worksheet.sc:14:19: 
+Values of types Option[Int] and Int cannot be compared with == or !=
+        case Some(msg.parentId)=> printMessages(messages.tail)
+                  ^^^^^^^^^^^^
+2022.08.20 23:08:16 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.29s[0m
+[31merror[39m: *.worksheet.sc:13:19: 
+Values of types Option[Int] and Int cannot be compared with == or !=
+        case Some(msg.parentId)=> printMessages(messages.tail)
+                  ^^^^^^^^^^^^
+2022.08.20 23:09:12 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.21s[0m
+[31merror[39m: *.worksheet.sc:13:19: 
+Stable identifier required, but msg.parentId.get found
+        case Some(msg.parentId.get)=> printMessages(messages.tail)
+                  ^^^^^^^^^^^^^^^^
+2022.08.20 23:10:29 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.19s[0m
+[31merror[39m: *.worksheet.sc:13:19: 
+Values of types Option[Int] and Int cannot be compared with == or !=
+        case Some(msg.parentId)=> printMessages(messages.tail)
+                  ^^^^^^^^^^^^
+2022.08.20 23:10:49 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.24s[0m
+[31merror[39m: *.worksheet.sc:12:5: 
+value parentId is not a member of object App.this.Msg
+    Msg.parentId match{
+    ^^^^^^^^^^^^
+2022.08.20 23:11:58 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.21s[0m
+[31merror[39m: *.worksheet.sc:13:19: 
+Values of types Option[Int] and Int cannot be compared with == or !=
+        case Some(Message.parentId)=> printMessages(messages.tail)
+                  ^^^^^^^^^^^^^^^^
+2022.08.20 23:12:04 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.25s[0m
+[31merror[39m: *.worksheet.sc:13:19: 
+Values of types Option[Int] and Int cannot be compared with == or !=
+        case Some(Message.parentId)=> printMessages(messages.tail)
+                  ^^^^^^^^^^^^^^^^
+2022.08.20 23:12:19 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.22s[0m
+[31merror[39m: *.worksheet.sc:14:14: 
+Found:    None.type
+Required: App.this.Msg
+pattern type is incompatible with expected type
+        case None => printMessage(Message)
+             ^^^^
+2022.08.20 23:13:42 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.25s[0m
+[31merror[39m: *.worksheet.sc:14:14: 
+Found:    None.type
+Required: App.this.Msg
+pattern type is incompatible with expected type
+        case None => printMessage(Message)
+             ^^^^
+2022.08.20 23:13:42 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.21s[0m
+[31merror[39m: *.worksheet.sc:13:19: 
+Values of types Option[Int] and Int cannot be compared with == or !=
+        case Some(Message.parentId)=> printMessages(messages.tail)
+                  ^^^^^^^^^^^^^^^^
+2022.08.20 23:13:57 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.22s[0m
+[31merror[39m: *.worksheet.sc:13:39: 
+Unbound placeholder parameter; incorrect use of _
+        case Some(Message.parentId)=> _
+                                      ^
+[31merror[39m: *.worksheet.sc:13:19: 
+Values of types Option[Int] and Int cannot be compared with == or !=
+        case Some(Message.parentId)=> _
+                  ^^^^^^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:13:39: 
+Not found: _$1
+        case Some(Message.parentId)=> _
+                                      ^
+2022.08.20 23:14:10 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.29s[0m
+[31merror[39m: *.worksheet.sc:15:1: 
+missing argument for parameter messages of method printMessages in class App: (messages: Array[App.this.Msg]): Unit
+printMessages()
+^^^^^^^^^^^^^^^
+2022.08.20 23:15:19 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.21s[0m
+[31merror[39m: *.worksheet.sc:15:15: 
+Found:    App.this.Msg
+Required: Array[App.this.Msg]
+printMessages(Msg(0, None, "Hello"))
+              ^^^^^^^^^^^^^^^^^^^^^
+2022.08.20 23:15:34 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.3s[0m
+2022.08.20 23:15:45 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.54s[0m
+[31merror[39m: *.worksheet.sc:16:5: 
+value Msg is not a member of App.this.Msg.
+Note that `Msg` is treated as an infix operator in Scala 3.
+If you do not want that, insert a `;` or empty line in front
+or drop any spaces behind the operator.
+    Msg(0, None, "Hello")
+    ^
+2022.08.20 23:17:18 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.23s[0m
+2022.08.20 23:17:31 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.71s[0m
+2022.08.20 23:17:32 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.58s[0m
+Aug 20, 2022 11:17:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10064
+2022.08.20 23:17:45 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.5s[0m
+[31merror[39m: *.worksheet.sc:11:30: 
+Missing parameter type
+
+I could not infer the type of the parameter _$1 of expanded function:
+_$1 => _$1.txt.
+    messages.foreach(println(_.txt))
+                             ^
+[31merror[39m: *.worksheet.sc:11:22: 
+Found:    Unit
+Required: App.this.Msg => Any
+    messages.foreach(println(_.txt))
+                     ^^^^^^^^^^^^^^
+2022.08.20 23:18:01 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.3s[0m
+2022.08.20 23:18:16 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.53s[0m
+2022.08.20 23:18:54 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.51s[0m
+Aug 20, 2022 11:20:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10606
+[31merror[39m: *.worksheet.sc:14:14: 
+Found:    None.type
+Required: App.this.Msg
+pattern type is incompatible with expected type
+        case None =>println(s"#${msg.id} ${msg.txt}")
+             ^^^^
+2022.08.20 23:24:46 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.28s[0m
+[33mwarning[39m: *.worksheet.sc:12:5: 
+match may not be exhaustive.
+
+It would fail on pattern case: Some(_)
+
+    msg.parentId match
+    ^^^^^^^^^^^^
+2022.08.20 23:25:01 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.55s[0m
+Aug 20, 2022 11:25:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10883
+[33mwarning[39m: *.worksheet.sc:12:5: 
+match may not be exhaustive.
+
+It would fail on pattern case: Some(_)
+
+    msg.parentId match
+    ^^^^^^^^^^^^
+2022.08.21 14:30:14 INFO  time: evaluated worksheet '*.worksheet.sc' in 3.63s[0m
+2022.08.21 14:30:14 INFO  file:///home/arjun/Desktop/arjunLearnsScala/*.worksheet.sc:12:5: stale mdoc warning:
+match may not be exhaustive.
+
+It would fail on pattern case: Some(_)
+
+    msg.parentId match
+    ^^^^^^^^^^^^[0m
+2022.08.21 14:30:23 WARN  no build target for: /home/arjun/Desktop/arjunLearnsScala/myScript.sc[0m
+2022.08.21 14:32:31 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.38s[0m
+2022.08.21 19:22:24 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.38s[0m
+Aug 21, 2022 7:46:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12180
+[31merror[39m: *.worksheet.sc:6:13: 
+missing argument for parameter denominator of method apply in object Rational: (numerator: Int, denominator: Int): App.this.Rational
+            Rational((this.numerator*other.denominator + this.denominator * other.numerator)/this.denominator * other.denominator)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.08.21 19:48:03 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.24s[0m
+2022.08.21 19:48:15 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.53s[0m
+2022.08.21 19:49:21 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.49s[0m
+2022.08.21 19:49:33 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.61s[0m
+2022.08.21 19:50:11 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.49s[0m
+[31merror[39m: *.worksheet.sc:2:13: 
+Not found: d
+    require(d!=0)
+            ^
+2022.08.21 19:54:46 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.22s[0m
+2022.08.21 19:54:51 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.42s[0m
+2022.08.21 19:54:54 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.48s[0m
+2022.08.21 19:57:19 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.48s[0m
+2022.08.21 19:57:22 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.49s[0m
+[31merror[39m: *.worksheet.sc:4:32: 
+value denominator cannot be accessed as a member of (other : App.this.Rational) from class Rational.
+        if this.denominator == other.denominator then
+                               ^^^^^^^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:5:39: 
+value numerator cannot be accessed as a member of (other : App.this.Rational) from class Rational.
+            Rational(this.numerator + other.numerator, denominator)
+                                      ^^^^^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:7:38: 
+value denominator cannot be accessed as a member of (other : App.this.Rational) from class Rational.
+            Rational((this.numerator*other.denominator + this.denominator * other.numerator),this.denominator * other.denominator)
+                                     ^^^^^^^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:7:113: 
+value denominator cannot be accessed as a member of (other : App.this.Rational) from class Rational.
+            Rational((this.numerator*other.denominator + this.denominator * other.numerator),this.denominator * other.denominator)
+                                                                                                                ^^^^^^^^^^^^^^^^^
+2022.08.21 19:58:55 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.22s[0m
+2022.08.21 19:59:22 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.48s[0m
+Aug 21, 2022 8:31:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: 
+dotty.tools.dotc.core.MissingType: 
+	at dotty.tools.dotc.core.TypeErasure.dotty$tools$dotc$core$TypeErasure$$sigName(TypeErasure.scala:787)
+	at dotty.tools.dotc.core.TypeErasure$.sigName(TypeErasure.scala:204)
+	at dotty.tools.dotc.core.Signature.$anonfun$2(Signature.scala:111)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at dotty.tools.dotc.core.Signature.prependTermParams(Signature.scala:111)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.computeSignature$2(Types.scala:3539)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.signature(Types.scala:3556)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.computeSignature$2(Types.scala:3531)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.signature(Types.scala:3556)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.signature(Denotations.scala:615)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.signature(Denotations.scala:605)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.atSignature(Denotations.scala:647)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.atSignature(Denotations.scala:645)
+	at dotty.tools.dotc.core.tasty.TreeUnpickler$TreeReader.readLengthTerm$1(TreeUnpickler.scala:1223)
+	at dotty.tools.dotc.core.tasty.TreeUnpickler$TreeReader.readTerm(TreeUnpickler.scala:1297)
+	at dotty.tools.dotc.core.tasty.TreeUnpickler$TreeReader.readLengthTerm$1(TreeUnpickler.scala:1137)
+	at dotty.tools.dotc.core.tasty.TreeUnpickler$TreeReader.readTerm(TreeUnpickler.scala:1297)
+	at dotty.tools.dotc.core.tasty.TreeUnpickler$TreeReader.readLengthTerm$1(TreeUnpickler.scala:1137)
+	at dotty.tools.dotc.core.tasty.TreeUnpickler$TreeReader.readTerm(TreeUnpickler.scala:1297)
+	at dotty.tools.dotc.core.tasty.TreeUnpickler$TreeReader.$anonfun$19(TreeUnpickler.scala:934)
+	at dotty.tools.tasty.TastyReader.collectWhile(TastyReader.scala:137)
+	at dotty.tools.dotc.core.tasty.TreeUnpickler$TreeReader.readTemplate(TreeUnpickler.scala:937)
+	at dotty.tools.dotc.core.tasty.TreeUnpickler$TreeReader.readNewDef(TreeUnpickler.scala:855)
+	at dotty.tools.dotc.core.tasty.TreeUnpickler$TreeReader.readIndexedDef(TreeUnpickler.scala:774)
+	at dotty.tools.dotc.core.tasty.TreeUnpickler$Completer.complete(TreeUnpickler.scala:120)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.completeFrom(SymDenotations.scala:167)
+	at dotty.tools.dotc.core.Denotations$Denotation.completeInfo$1(Denotations.scala:187)
+	at dotty.tools.dotc.core.Denotations$Denotation.info(Denotations.scala:189)
+	at dotty.tools.dotc.core.Denotations$Denotation.completeInfo$1(Denotations.scala:187)
+	at dotty.tools.dotc.core.Denotations$Denotation.info(Denotations.scala:189)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.ensureCompleted(SymDenotations.scala:369)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.flags(SymDenotations.scala:64)
+	at dotty.tools.dotc.core.SymDenotations$ModuleCompleter.complete(SymDenotations.scala:2690)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.completeFrom(SymDenotations.scala:167)
+	at dotty.tools.dotc.core.Denotations$Denotation.completeInfo$1(Denotations.scala:187)
+	at dotty.tools.dotc.core.Denotations$Denotation.info(Denotations.scala:189)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.ensureCompleted(SymDenotations.scala:369)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.flags(SymDenotations.scala:64)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.is(SymDenotations.scala:106)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.accessBoundary(SymDenotations.scala:1389)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.isPublic(SymDenotations.scala:1396)
+	at scala.meta.internal.pc.CompilerSearchVisitor.isAccessible(CompilerSearchVisitor.scala:18)
+	at scala.meta.internal.pc.CompilerSearchVisitor.$anonfun$1$$anonfun$3(CompilerSearchVisitor.scala:34)
+	at scala.collection.immutable.List.filter(List.scala:515)
+	at scala.meta.internal.pc.CompilerSearchVisitor.$anonfun$1(CompilerSearchVisitor.scala:34)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.CompilerSearchVisitor.loop$1(CompilerSearchVisitor.scala:34)
+	at scala.meta.internal.pc.CompilerSearchVisitor.toSymbols(CompilerSearchVisitor.scala:40)
+	at scala.meta.internal.pc.CompilerSearchVisitor.visitClassfile(CompilerSearchVisitor.scala:51)
+	at scala.meta.internal.metals.ClasspathSearch.$anonfun$search$5(ClasspathSearch.scala:49)
+	at scala.meta.internal.metals.ClasspathSearch.$anonfun$search$5$adapted(ClasspathSearch.scala:39)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:563)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:561)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1293)
+	at scala.meta.internal.metals.ClasspathSearch.search(ClasspathSearch.scala:39)
+	at scala.meta.internal.metals.StandaloneSymbolSearch.search(StandaloneSymbolSearch.scala:103)
+	at scala.meta.internal.pc.completions.Completions.enrichWithSymbolSearch(Completions.scala:308)
+	at scala.meta.internal.pc.completions.Completions.filterInteresting(Completions.scala:386)
+	at scala.meta.internal.pc.completions.Completions.completions(Completions.scala:86)
+	at scala.meta.internal.pc.completions.CompletionsProvider.completions(CompletionsProvider.scala:70)
+
+Aug 21, 2022 8:32:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13645
+2022.08.21 20:32:17 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.47s[0m
+2022.08.21 20:32:22 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.48s[0m
+2022.08.21 20:32:26 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.57s[0m
+2022.08.21 20:33:14 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.46s[0m
+2022.08.21 20:33:21 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.45s[0m
+2022.08.21 20:33:25 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.49s[0m
+2022.08.21 20:36:14 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.4s[0m
+2022.08.21 20:43:10 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.44s[0m
+2022.08.21 20:43:35 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.64s[0m
+2022.08.21 20:43:52 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.4s[0m
+[31merror[39m: *.worksheet.sc:25:14: 
+Not found: nunumerator
+        loop(nunumerator, denominator)
+             ^^^^^^^^^^^
+2022.08.21 20:44:06 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.17s[0m
+2022.08.21 20:44:11 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.44s[0m
+2022.08.21 20:44:19 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.4s[0m
+Aug 21, 2022 8:44:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15008
+2022.08.21 20:44:54 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.48s[0m
+2022.08.21 20:45:40 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.51s[0m
+2022.08.21 20:46:12 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.38s[0m
+2022.08.21 20:46:16 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.39s[0m
+2022.08.21 20:46:24 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.53s[0m
+2022.08.21 20:48:51 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.41s[0m
+2022.08.21 20:48:56 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.37s[0m
+[31merror[39m: *.worksheet.sc:32:19: 
+Recursive value gcd needs type
+        val gcd = gcd
+                  ^
+[31merror[39m: *.worksheet.sc:33:32: 
+Not found: gc
+        new Rational(numerator/gc)
+                               ^^
+2022.08.21 20:52:58 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.19s[0m
+[31merror[39m: *.worksheet.sc:32:17: 
+Not found: gcd
+        val g = gcd
+                ^^^
+[31merror[39m: *.worksheet.sc:33:32: 
+Not found: gc
+        new Rational(numerator/gc)
+                               ^^
+2022.08.21 20:53:04 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.21s[0m
+[31merror[39m: *.worksheet.sc:32:17: 
+Not found: gcd
+        val g = gcd()
+                ^^^
+[31merror[39m: *.worksheet.sc:33:32: 
+Not found: gc
+        new Rational(numerator/gc)
+                               ^^
+2022.08.21 20:53:09 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.16s[0m
+2022.08.21 20:54:07 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.51s[0m
+Aug 21, 2022 8:55:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15824
+2022.08.21 20:55:36 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.58s[0m
+[31merror[39m: *.worksheet.sc:42:9: 
+value gcd is not a member of App.this.Rational
+println(Rational(7,77).gcd())
+        ^^^^^^^^^^^^^^^^^^
+2022.08.21 20:58:37 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.21s[0m
+2022.08.21 20:58:42 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.42s[0m
+[31merror[39m: *.worksheet.sc:42:9: 
+missing argument for parameter denominator of method apply in object Rational: (numerator: Int, denominator: Int): App.this.Rational
+println(Rational(12/48))
+        ^^^^^^^^^^^^^^^
+2022.08.21 20:58:51 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.21s[0m
+2022.08.21 20:58:55 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.43s[0m
+[31merror[39m: *.worksheet.sc:19:9: ; expected but else found
+        else
+        ^^^^
+2022.08.21 21:02:39 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.3s[0m
+2022.08.21 21:02:55 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.55s[0m
+2022.08.21 21:03:07 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.47s[0m
+2022.08.21 21:04:31 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.44s[0m
+[31merror[39m: *.worksheet.sc:55:26: 
+missing argument for parameter denominator of method apply in object Rational: (numerator: Int, denominator: Int): App.this.Rational
+println(Rational(1, 2) / Rational(1))
+                         ^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:55:26: 
+missing argument for parameter denominator of method apply in object Rational: (numerator: Int, denominator: Int): App.this.Rational
+println(Rational(1, 2) / Rational(1))
+                         ^^^^^^^^^^^
+2022.08.21 21:04:40 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.22s[0m
+2022.08.21 21:05:26 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.42s[0m
+2022.08.21 21:05:33 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.42s[0m
+2022.08.21 21:05:43 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.42s[0m
+2022.08.21 21:12:01 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.48s[0m
+2022.08.21 21:12:10 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.43s[0m
+[31merror[39m: *.worksheet.sc:14:30: 
+Not found: i
+        Rational(numerator + i * denominator, denominator)
+                             ^
+2022.08.21 21:13:20 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.21s[0m
+2022.08.21 21:13:26 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.42s[0m
+2022.08.21 21:14:02 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.43s[0m
+[31merror[39m: *.worksheet.sc:62:9: Procedure syntax is not supported. Convert procedure `+` to method by adding `: Unit =`.
+    def +
+        ^
+2022.08.21 21:15:07 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.26s[0m
+[31merror[39m: *.worksheet.sc:65:9: Procedure syntax is not supported. Convert procedure `+` to method by adding `: Unit =`.
+    def +
+        ^
+2022.08.21 21:15:20 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.26s[0m
+[31merror[39m: *.worksheet.sc:65:9: Procedure syntax is not supported. Convert procedure `+` to method by adding `: Unit =`.
+    def +
+        ^
+2022.08.21 21:16:07 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.26s[0m
+[31merror[39m: *.worksheet.sc:65:9: Procedure syntax is not supported. Convert procedure `+` to method by adding `: Unit =`.
+    def +
+        ^
+2022.08.21 21:16:13 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.26s[0m
+[31merror[39m: *.worksheet.sc:65:9: Procedure syntax is not supported. Convert procedure `+` to method by adding `: Unit =`.
+    def +
+        ^
+2022.08.21 21:16:15 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.33s[0m
+Aug 21, 2022 9:16:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18018
+2022.08.21 21:16:22 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.65s[0m
+2022.08.21 21:16:22 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.65s[0m
+2022.08.21 21:16:26 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.58s[0m
+2022.08.21 21:16:35 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.47s[0m
+[31merror[39m: *.worksheet.sc:45:83: 
+Not found: $numerator
+        if numerator < 0 || denominator < 0 then s"-$numerator/$denominator" else $numerator/$denominator
+                                                                                  ^^^^^^^^^^
+2022.08.21 21:17:33 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.2s[0m
+2022.08.21 21:17:40 INFO  file:///home/arjun/Desktop/arjunLearnsScala/*.worksheet.sc:45:83: stale mdoc error:
+Not found: $numerator
+        if numerator < 0 || denominator < 0 then s"-$numerator/$denominator" else $numerator/$denominator
+                                                                                  ^^^^^^^^^^[0m
+2022.08.21 21:17:40 INFO  file:///home/arjun/Desktop/arjunLearnsScala/*.worksheet.sc:45:83: stale mdoc error:
+Not found: $numerator
+        if numerator < 0 || denominator < 0 then s"-$numerator/$denominator" else $numerator/$denominator
+                                                                                  ^^^^^^^^^^[0m
+2022.08.21 21:17:41 INFO  file:///home/arjun/Desktop/arjunLearnsScala/*.worksheet.sc:45:83: stale mdoc error:
+Not found: $numerator
+        if numerator < 0 || denominator < 0 then s"-$numerator/$denominator" else $numerator/$denominator
+                                                                                  ^^^^^^^^^^[0m
+[31merror[39m: *.worksheet.sc:45:108: unclosed string interpolation
+        if numerator < 0 || denominator < 0 then s"-$numerator/$denominator" else s"$numerator/$denominator
+                                                                                                           ^
+2022.08.21 21:17:41 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.26s[0m
+[31merror[39m: *.worksheet.sc:48:38: unclosed string interpolation
+            s"$numerator/$denominator
+                                     ^
+2022.08.21 21:18:03 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.2s[0m
+2022.08.21 21:18:10 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.45s[0m
+2022.08.21 21:18:49 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.56s[0m
+2022.08.21 21:19:37 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.54s[0m
+[31merror[39m: *.worksheet.sc:66:26: 
+missing argument for parameter denominator of method apply in object Rational: (numerator: Int, denominator: Int): App.this.Rational
+    def + (y:Rational) = Rational(x) + y
+                         ^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:67:26: 
+missing argument for parameter denominator of method apply in object Rational: (numerator: Int, denominator: Int): App.this.Rational
+    def - (y:Rational) = Rational(x) - y
+                         ^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:68:26: 
+missing argument for parameter denominator of method apply in object Rational: (numerator: Int, denominator: Int): App.this.Rational
+    def * (y:Rational) = Rational(x) * y
+                         ^^^^^^^^^^^
+[31merror[39m: *.worksheet.sc:69:26: 
+missing argument for parameter denominator of method apply in object Rational: (numerator: Int, denominator: Int): App.this.Rational
+    def / (y:Rational) = Rational(x) / y
+                         ^^^^^^^^^^^
+2022.08.21 21:20:46 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.28s[0m
+2022.08.21 21:21:04 INFO  time: evaluated worksheet '*.worksheet.sc' in 0.59s[0m
